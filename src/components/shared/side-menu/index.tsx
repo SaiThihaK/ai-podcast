@@ -1,13 +1,17 @@
+import { Button } from "@/components/ui/button";
 import { FC } from "react";
-import Wrapper from "@/components/shared/wrapper";
+import SideMenu from "./side-menu";
 
 const SideNavbar: FC = () => {
   return (
-    <div className="h-screen w-full">
-      <Wrapper className="flex flex-col justify-start">
-        <div>Logo</div>
-        <div>side menu</div>
-      </Wrapper>
+    <div className="w-full h-screen py-6 flex flex-col justify-between">
+      <div className="flex flex-col justify-start gap-y-6">
+        <h1 className="text-4xl px-4">Podcastr</h1>
+        <SideMenu />
+      </div>
+      <div className="w-full px-4">
+        <Button className="w-full">Sign Up</Button>
+      </div>
     </div>
   );
 };
