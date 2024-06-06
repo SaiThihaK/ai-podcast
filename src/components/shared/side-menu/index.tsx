@@ -4,7 +4,7 @@ import SideMenu from "./side-menu";
 
 const SideNavbar: FC = () => {
   return (
-    <div className="w-full h-screen py-6 flex flex-col justify-between">
+    <div className="w-full h-screen overflow-y-scroll no-scrollbar py-6 flex flex-col justify-between">
       <div className="flex flex-col justify-start gap-y-6">
         <h1 className="text-4xl px-4">Podcastr</h1>
         <SideMenu />
