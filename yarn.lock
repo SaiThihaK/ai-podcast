@@ -12,6 +12,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.13.10":
+  version: 7.24.7
+  resolution: "@babel/runtime@npm:7.24.7"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/b6fa3ec61a53402f3c1d75f4d808f48b35e0dfae0ec8e2bb5c6fc79fb95935da75766e0ca534d0f1c84871f6ae0d2ebdd950727cfadb745a2cdbef13faef5513
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.24.1":
   version: 7.24.6
   resolution: "@babel/runtime@npm:7.24.6"
@@ -279,12 +288,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-compose-refs@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@radix-ui/react-compose-refs@npm:1.0.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/be06f8dab35b5a1bffa7a5982fb26218ddade1acb751288333e3b89d7b4a7dfb5a6371be83876dac0ec2ebe0866d295e8618b778608e1965342986ea448040ec
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-icons@npm:^1.3.0":
   version: 1.3.0
   resolution: "@radix-ui/react-icons@npm:1.3.0"
   peerDependencies:
     react: ^16.x || ^17.x || ^18.x
   checksum: 10c0/581657680e43fd13ff06e01f963e3afa94671d4ce6c3fb126e2c70c993ab8650faa55286974032dbccfecca4db57308fb66d53771d765887e03600cddee84ae5
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-slot@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@radix-ui/react-slot@npm:1.0.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+    "@radix-ui/react-compose-refs": "npm:1.0.1"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/3af6ea4891e6fa8091e666802adffe7718b3cd390a10fa9229a5f40f8efded9f3918ea01b046103d93923d41cc32119505ebb6bde76cad07a87b6cf4f2119347
   languageName: node
   linkType: hard
 
@@ -1953,6 +1993,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:^9.0.11":
+  version: 9.0.11
+  resolution: "husky@npm:9.0.11"
+  bin:
+    husky: bin.mjs
+  checksum: 10c0/2c787dcf74a837fc9a4fea7da907509d4bd9a289f4ea10ecc9d86279e4d4542b0f5f6443a619bccae19e265f2677172cc2b86aae5c932a35a330cc227d914605
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -2504,6 +2553,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-react@npm:^0.383.0":
+  version: 0.383.0
+  resolution: "lucide-react@npm:0.383.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/241814c4a12b7f1e946a18d60fff4d35ab25ece77dcd6eb99dd7cf3a31d1578b2263aa5339a67c0a84646fdcd16cee47f9f53f0c5aff8cfc6601f2e001052cde
+  languageName: node
+  linkType: hard
+
 "make-fetch-happen@npm:^13.0.0":
   version: 13.0.1
   resolution: "make-fetch-happen@npm:13.0.1"
@@ -2687,6 +2745,7 @@ __metadata:
   resolution: "my-app@workspace:."
   dependencies:
     "@radix-ui/react-icons": "npm:^1.3.0"
+    "@radix-ui/react-slot": "npm:^1.0.2"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
@@ -2694,6 +2753,8 @@ __metadata:
     clsx: "npm:^2.1.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.2.3"
+    husky: "npm:^9.0.11"
+    lucide-react: "npm:^0.383.0"
     next: "npm:14.2.3"
     postcss: "npm:^8"
     react: "npm:^18"

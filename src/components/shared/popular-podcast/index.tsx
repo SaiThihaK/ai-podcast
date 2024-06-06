@@ -1,8 +1,7 @@
 import { FC } from "react";
-import Wrapper from "@/components/shared/wrapper";
 
 const PopularPodcast: FC = () => {
-  return <Wrapper>PopularPodcast</Wrapper>;
+  return <div>PopularPodcast</div>;
 };
 
 export default PopularPodcast;

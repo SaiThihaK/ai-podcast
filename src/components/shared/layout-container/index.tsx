@@ -4,9 +4,9 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { FC, ReactNode } from "react";
-import Wrapper from "@/components/shared/wrapper";
-import PopularPodcast from "@/components/shared/layout-container/popular-podcast";
-import SideNavbar from "@/components/shared/layout-container/side-menu";
+import PopularPodcast from "@/components/shared/popular-podcast";
+import SideNavbar from "../side-menu";
+import Wrapper from "../wrapper";
 
 type Props = {
   children: ReactNode;
@@ -14,14 +14,17 @@ type Props = {
 
 const LayoutContainer: FC<Props> = ({ children }) => {
   return (
-    <ResizablePanelGroup direction="horizontal" className="container">
+    <ResizablePanelGroup
+      direction="horizontal"
+      className="xl:container overflow-hidden"
+    >
       <ResizablePanel defaultSize={20} minSize={10}>
         <SideNavbar />
       </ResizablePanel>
       <ResizableHandle />
       <ResizablePanel defaultSize={60} minSize={55}>
-        <div className="w-full h-screen bg-black">
-          <Wrapper>{children}</Wrapper>
+        <div className="w-full h-full bg-[#101114]">
+          <Wrapper> {children}</Wrapper>
         </div>
       </ResizablePanel>
       <ResizableHandle />
