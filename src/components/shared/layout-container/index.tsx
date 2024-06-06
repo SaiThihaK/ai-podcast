@@ -5,8 +5,8 @@ import {
 } from "@/components/ui/resizable";
 import { FC, ReactNode } from "react";
 import Wrapper from "@/components/shared/wrapper";
-import PopularPodcast from "@/components/shared/layout-container/popular-podcast";
-import SideNavbar from "@/components/shared/layout-container/side-menu";
+import PopularPodcast from "@/components/shared/popular-podcast";
+import SideNavbar from "@/components/shared/side-menu";
 
 type Props = {
   children: ReactNode;
