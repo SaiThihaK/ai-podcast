@@ -14,7 +14,7 @@ type Props = {
 const LayoutContainer: FC<Props> = ({ children }) => {
   return (
     <ResizablePanelGroup direction="horizontal" className="overflow-hidden">
-      <ResizablePanel defaultSize={20} minSize={12}>
+      <ResizablePanel defaultSize={20} minSize={15}>
         <SideNavbar />
       </ResizablePanel>
       <ResizableHandle />
