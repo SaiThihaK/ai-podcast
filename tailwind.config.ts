@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    height: {
+      screen: "100dvh",
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -23,7 +26,7 @@ const config = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "#15171C",
-        foreground: "hsl(var(--foreground))",
+        foreground: "#fff",
         primary: {
           DEFAULT: "#F97535",
           foreground: "hsl(var(--primary-foreground))",
