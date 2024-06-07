@@ -1,7 +1,8 @@
+import LayoutContainer from "@/components/shared/layout-container";
 import { NextPage } from "next";
 
 const page: NextPage = () => {
-  return <div>Discover Page</div>;
+  return <LayoutContainer>Discover Page</LayoutContainer>;
 };
 
 export default page;
