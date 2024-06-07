@@ -1,4 +1,5 @@
 import LayoutContainer from "@/components/shared/layout-container";
+import ConvexClientProvider from "@/provider/convex-client-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LayoutContainer>{children}</LayoutContainer>
+        <ConvexClientProvider>
+          <LayoutContainer>{children}</LayoutContainer>
+        </ConvexClientProvider>
       </body>
     </html>
   );
