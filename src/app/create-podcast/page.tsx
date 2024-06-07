@@ -1,7 +1,8 @@
+import LayoutContainer from "@/components/shared/layout-container";
 import { NextPage } from "next";
 
 const page: NextPage = () => {
-  return <div>Create PodCast</div>;
+  return <LayoutContainer>Create PodCast</LayoutContainer>;
 };
 
 export default page;
