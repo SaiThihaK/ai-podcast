@@ -1,4 +1,4 @@
-import ClerkClientProvider from "@/provider/clerk-client-provider";
+import ConvexClerkProvider from "@/provider/clerk-convex-client-provider";
 import ConvexClientProvider from "@/provider/convex-client-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClerkClientProvider>
+        <ConvexClerkProvider>
           <ConvexClientProvider>{children}</ConvexClientProvider>
-        </ClerkClientProvider>
+        </ConvexClerkProvider>
       </body>
     </html>
   );
